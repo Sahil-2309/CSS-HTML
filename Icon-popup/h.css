@@ -1,0 +1,21 @@
+.settings-icon {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.settings-panel {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  visibility: hidden;
+}
+
+.settings-icon.active + .settings-panel {
+  visibility: visible;
+}
